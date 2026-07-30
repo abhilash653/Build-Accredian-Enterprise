@@ -1,0 +1,60 @@
+{
+  "programs": [
+    {
+      "slug": "ai-ml",
+      "title": "AI & Machine Learning",
+      "blurb": "Applied GenAI, MLOps and model governance for engineering and analytics teams.",
+      "tracks": ["Applied GenAI", "MLOps", "Deep Learning"]
+    },
+    {
+      "slug": "data-science",
+      "title": "Data Science & Analytics",
+      "blurb": "From SQL fluency to advanced experimentation and decision science.",
+      "tracks": ["Analytics Engineering", "Experimentation", "Visualisation"]
+    },
+    {
+      "slug": "product",
+      "title": "Product Management",
+      "blurb": "Discovery, roadmapping and outcome-driven delivery for product orgs.",
+      "tracks": ["Product Discovery", "Growth", "AI Products"]
+    },
+    {
+      "slug": "leadership",
+      "title": "Leadership & Strategy",
+      "blurb": "Executive programs for managers stepping into enterprise-scale ownership.",
+      "tracks": ["People Leadership", "Digital Strategy", "Change Management"]
+    }
+  ],
+  "features": [
+    {
+      "icon": "GraduationCap",
+      "title": "Curated curriculum with IIT/IIM partners",
+      "description": "Every program is co-authored with faculty from IITs, IIMs and global universities, then mapped to your business outcomes."
+    },
+    {
+      "icon": "Users",
+      "title": "Live 1:1 mentorship",
+      "description": "Practitioners from top product and data organisations coach your teams through real project work every week."
+    },
+    {
+      "icon": "LineChart",
+      "title": "Real-time analytics & ROI dashboard",
+      "description": "Track completion, engagement and skill lift per team, and export board-ready ROI reporting in a click."
+    },
+    {
+      "icon": "UsersRound",
+      "title": "Cohort-based peer learning",
+      "description": "Teams learn together in structured cohorts with capstones scored against your own internal use cases."
+    },
+    {
+      "icon": "SlidersHorizontal",
+      "title": "Fully customizable programs",
+      "description": "Choose duration, depth, delivery mode and assessments. We co-design the syllabus with your L&D leaders."
+    },
+    {
+      "icon": "BadgeCheck",
+      "title": "Globally recognized certifications",
+      "description": "Learners earn credentials from partner institutions that carry weight inside and outside your organisation."
+    }
+  ]
+}

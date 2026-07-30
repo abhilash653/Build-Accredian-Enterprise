@@ -1,0 +1,22 @@
+{
+  "testimonials": [
+    {
+      "quote": "We moved 240 engineers through applied AI in two quarters. Team velocity on data products is up measurably, and the mentor model is what made it stick.",
+      "name": "Ananya Rao",
+      "role": "Head of Learning & Development",
+      "company": "Fintech scale-up, Bengaluru"
+    },
+    {
+      "quote": "The ROI dashboard finally gave my leadership team a defensible view of what training is doing. 94% completion across 18 cohorts is unheard of for us.",
+      "name": "Marcus Feld",
+      "role": "Chief Human Resources Officer",
+      "company": "Global manufacturing group"
+    },
+    {
+      "quote": "Co-designing the curriculum meant our product managers practised on our own roadmap, not case studies. Adoption was immediate.",
+      "name": "Priya Menon",
+      "role": "VP, Talent & Capability",
+      "company": "Enterprise SaaS, Pune"
+    }
+  ]
+}
