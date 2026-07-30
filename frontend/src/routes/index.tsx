@@ -10,6 +10,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { LeadForm } from "@/components/LeadForm";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
+import { SearchLeads } from "@/components/SearchLeads";
 import { StickyDemoCta } from "@/components/StickyDemoCta";
 
 const title = "Accredian Enterprise — Upskill Your Workforce at Scale";
@@ -35,6 +36,7 @@ function Landing() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
+        <SearchLeads />
         <Hero />
         <LogoStrip />
         <Programs />

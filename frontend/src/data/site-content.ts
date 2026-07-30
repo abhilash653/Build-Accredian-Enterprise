@@ -150,7 +150,8 @@ export const TESTIMONIALS = [
   },
 ] as const;
 
-export const TEAM_SIZES = ["1–50", "51–200", "201–1000", "1000+"] as const;
+// Values must match backend validation enum: ["1-10","11-50","51-200","200+"]
+export const TEAM_SIZES = ["1-10", "11-50", "51-200", "200+"] as const;
 
 export const INTEREST_AREAS = ["AI/ML", "Data Science", "Product", "Leadership"] as const;
 

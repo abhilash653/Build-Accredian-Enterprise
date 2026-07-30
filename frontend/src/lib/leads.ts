@@ -38,6 +38,10 @@ function buildLeadEndpoint() {
   return apiBaseUrl ? new URL("/api/leads", apiBaseUrl).toString() : "/api/leads";
 }
 
+function buildSearchEndpoint() {
+  return apiBaseUrl ? new URL("/api/leads/search", apiBaseUrl).toString() : "/api/leads/search";
+}
+
 function toBackendPayload(payload: LeadPayload) {
   return {
     fullName: payload.fullName,
@@ -73,6 +77,30 @@ export async function submitLead(payload: LeadPayload): Promise<LeadRecord | { i
   }
 
   return mockSubmitLead(payload);
+}
+
+export async function searchLeads(name: string): Promise<LeadRecord[]> {
+  const endpoint = buildSearchEndpoint();
+  const url = new URL(endpoint);
+  url.searchParams.set("name", name);
+
+  try {
+    const res = await fetch(url.toString());
+    if (!res.ok) {
+      throw new Error(`Search failed with status ${res.status}`);
+    }
+    const body = (await res.json().catch(() => null)) as ApiEnvelope<{ leads: LeadRecord[] }> | null;
+    if (body?.success && body.data?.leads) {
+      return body.data.leads;
+    }
+    throw new Error(body?.error?.message ?? "Search failed");
+  } catch (error) {
+    if (apiBaseUrl) {
+      throw error;
+    }
+    // Fallback: return empty list if backend not configured
+    return [];
+  }
 }
 
 /** Temporary stand-in for the future POST /api/leads endpoint. */
