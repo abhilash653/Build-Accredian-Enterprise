@@ -10,3 +10,9 @@ export async function listLeads(req, res) {
   const leads = await leadService.listLeads();
   res.json(successResponse({ leads }));
 }
+
+export async function searchLeads(req, res) {
+  const name = String(req.query.name ?? "").trim();
+  const leads = await leadService.findLeadsByName(name);
+  res.json(successResponse({ leads }));
+}

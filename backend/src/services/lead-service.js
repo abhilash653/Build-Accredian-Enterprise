@@ -12,6 +12,13 @@ export class LeadService {
   async listLeads() {
     return this.repository.listAll();
   }
+
+  async findLeadsByName(name) {
+    if (!name) return this.repository.listAll();
+    const all = await this.repository.listAll();
+    const needle = name.trim().toLowerCase();
+    return all.filter((l) => String(l.fullName ?? "").toLowerCase().includes(needle));
+  }
 }
 
 export const leadService = new LeadService();

@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createLead, listLeads } from "../controllers/leads.controller.js";
+import { createLead, listLeads, searchLeads } from "../controllers/leads.controller.js";
 import { requireAdminKey } from "../middleware/admin-key.js";
 import { asyncHandler } from "../middleware/async-handler.js";
 import { leadSubmissionLimiter } from "../middleware/lead-rate-limit.js";
@@ -14,5 +14,8 @@ leadsRouter.post(
   validateBody(leadSubmissionSchema),
   asyncHandler(createLead),
 );
+
+// Public-ish search endpoint used by the demo UI to look up leads by name.
+leadsRouter.get("/search", asyncHandler(searchLeads));
 
 leadsRouter.get("/", requireAdminKey, asyncHandler(listLeads));

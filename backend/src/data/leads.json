@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "id": "fcc43579-2b4a-4cee-bb4d-8259ea2b5ebc",
+    "createdAt": "2026-07-30T12:38:58.178Z",
+    "fullName": "Mondyagu Abhilash",
+    "workEmail": "mondyaguabhilash@gmail.com",
+    "companyName": "vswam",
+    "teamSize": "1-10",
+    "interestArea": "Data Science"
+  },
+  {
+    "id": "2d3a2b99-8a2b-4c25-bd8c-1e6b9a0036cc",
+    "createdAt": "2026-07-30T12:14:37.290Z",
+    "fullName": "Monddyagu Abhilash",
+    "workEmail": "abhilash@company.com",
+    "companyName": "Sample Corp",
+    "teamSize": "200+",
+    "interestArea": "AI/ML",
+    "message": "Interested in enterprise upskilling"
+  }
+]

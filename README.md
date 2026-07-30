@@ -2,7 +2,7 @@
 
 This repository is split into two independent apps:
 
-- `frontend/` contains the Lovable-built React landing page.
+- `frontend/` contains the React landing page.
 - `backend/` contains the Node.js + Express API for lead capture and seed data.
 
 ## Repository Layout

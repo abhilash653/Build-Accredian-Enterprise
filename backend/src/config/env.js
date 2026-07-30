@@ -5,7 +5,8 @@ import { backendRoot, defaultDataDir } from "./paths.js";
 
 const envSchema = z.object({
   PORT: z.coerce.number().int().positive().default(4000),
-  ALLOWED_ORIGIN: z.string().default("http://localhost:5173"),
+  // Allow both Vite dev ports used during development
+  ALLOWED_ORIGIN: z.string().default("http://localhost:5173,http://localhost:5174"),
   ADMIN_API_KEY: z.string().min(1).default("change-me-in-development"),
   DATA_DIR: z.string().optional(),
 });
